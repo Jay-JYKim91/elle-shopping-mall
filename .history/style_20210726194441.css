@@ -18,38 +18,23 @@ body {
 }
 .container {
   text-align: center;
-  width: 40%;
+  width: 40vw;
   height: 70vh;
   margin: 30px auto;
-}
-.invisible {
-  display: none;
 }
 .options {
   display: flex;
   justify-content: space-between;
 }
-.btn {
-  background-color: #3f454d;
-  border: none;
-}
 .options img {
   width: 75px;
   height: 75px;
-  transition: transform 300ms;
-}
-.options img:hover {
-  transform: scale(1.1);
 }
 .color-box {
   width: 75px;
   height: 75px;
   text-align: center;
   border-radius: 10px;
-  transition: transform 300ms;
-}
-.color-box:hover {
-  transform: scale(1.1);
 }
 .color-box p {
   margin: 28px 0;
@@ -64,7 +49,6 @@ body {
   background-color: var(--color-pink);
 }
 .lists {
-  height: 660px;
   overflow-y: scroll;
   padding: 0;
   margin-top: 30px;
@@ -82,8 +66,8 @@ ul {
   padding: 10px;
   display: flex;
   align-items: center;
-  margin-top: 10px;
-  border-radius: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 .list img {
   width: 45px;

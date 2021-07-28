@@ -18,20 +18,13 @@ body {
 }
 .container {
   text-align: center;
-  width: 40%;
+  width: 40vw;
   height: 70vh;
   margin: 30px auto;
-}
-.invisible {
-  display: none;
 }
 .options {
   display: flex;
   justify-content: space-between;
-}
-.btn {
-  background-color: #3f454d;
-  border: none;
 }
 .options img {
   width: 75px;
@@ -46,7 +39,6 @@ body {
   height: 75px;
   text-align: center;
   border-radius: 10px;
-  transition: transform 300ms;
 }
 .color-box:hover {
   transform: scale(1.1);

@@ -18,20 +18,13 @@ body {
 }
 .container {
   text-align: center;
-  width: 40%;
+  width: 40vw;
   height: 70vh;
   margin: 30px auto;
-}
-.invisible {
-  display: none;
 }
 .options {
   display: flex;
   justify-content: space-between;
-}
-.btn {
-  background-color: #3f454d;
-  border: none;
 }
 .options img {
   width: 75px;

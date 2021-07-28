@@ -22,9 +22,6 @@ body {
   height: 70vh;
   margin: 30px auto;
 }
-.invisible {
-  display: none;
-}
 .options {
   display: flex;
   justify-content: space-between;

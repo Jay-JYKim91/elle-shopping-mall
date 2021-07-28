@@ -4,37 +4,37 @@ function loadItems() {
         .then(json => json.items);
 }
 
-// function createElement(item) {
-//     const img = document.createElement('img');
-//     img.setAttribute('src', item.image);
+function createElement(item) {
+    const img = document.createElement('img');
+    img.setAttribute('src', item.image);
 
-//     const description = document.createElement('div');
-//     description.setAttribute('class', 'description');
-//     description.innerText = `${item.gender} ${item.size} size`;
+    const description = document.createElement('div');
+    description.setAttribute('class', 'description');
+    description.innerText = `${item.gender} ${item.size} size`;
 
-//     const li = document.createElement('li');
-//     li.setAttribute('class','list');
-//     li.setAttribute('data-type', item.type);
-//     li.setAttribute('data-color', 'item.color');
-//     li.append(img);
-//     li.append(description);
-//     return li;
+    const li = document.createElement('li');
+    li.setAttribute('class','list');
+    li.setAttribute('data-type', item.type);
+    li.setAttribute('data-color', 'item.color');
+    li.append(img);
+    li.append(description);
+    return li;
+}
+// function displayItems(items) {
+//     const lists = document.querySelector('.lists');
+
+//     lists.innerHTML = items.map(item => createHTMLString(item)).join('');
 // }
-function displayItems(items) {
-    const lists = document.querySelector('.lists');
-
-    lists.innerHTML = items.map(item => createHTMLString(item)).join('');
-}
-function createHTMLString(item) {
-    return `
-        <li class="list">
-            <img src="${item.image}" alt="${item.img}">
-            <div class="description">
-                <p>${item.gender} ${item.size}</p>
-            </div>
-        </li>
-    `
-}
+// function createHTMLString(item) {
+//     return `
+//         <li class="list">
+//             <img src="${item.image}" alt="${item.img}">
+//             <div class="description">
+//                 <p>${item.gender} ${item.size}</p>
+//             </div>
+//         </li>
+//     `
+// }
 function onBtnClick(event, items) {
     const target = event.target
     const key = target.dataset.key;
